@@ -10,8 +10,8 @@
         android:id="@+id/tvBaseLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="108dp"
         android:text="Base"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/black"
@@ -27,6 +27,7 @@
         android:text="15%"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvBaseLabel" />
 
@@ -58,8 +59,8 @@
         android:id="@+id/tvBaseAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="84dp"
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toEndOf="@+id/tvBaseLabel"
@@ -81,7 +82,7 @@
         android:layout_height="19dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="36dp"
-        android:text="3.54"
+        android:text="No data yet ..."
         app:layout_constraintStart_toEndOf="@+id/tvTipView"
         app:layout_constraintTop_toBottomOf="@+id/seekBarTip" />
 
@@ -91,7 +92,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="48dp"
-        android:text="100.34"
+        android:text="No data yet ..."
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/tvTipAmount" />
 

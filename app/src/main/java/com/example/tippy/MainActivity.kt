@@ -68,8 +68,8 @@ class MainActivity : AppCompatActivity() {
            val totalAmount = baseAmount + tipAmount
 
 //                Displaying them on the screen
-           tvTipAmount.text = "$ " + tipAmount.toString()
-           tvTotal.text = "$ " + totalAmount.toString()
+           tvTipAmount.text = "$ " + "%.2f".format(tipAmount)
+           tvTotal.text = "$ " + "%.2f".format(totalAmount)
        }
     }
 }
