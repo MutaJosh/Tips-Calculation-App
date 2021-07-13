@@ -57,8 +57,8 @@ class MainActivity : AppCompatActivity() {
     private fun computerTipAndTotal() {
 
        if (tvBaseAmount.text.toString().isEmpty()){
-           tvTipAmount.text = ""
-           tvTotal.text = ""
+           tvTipAmount.text = "No data available ..."
+           tvTotal.text = "No data available ..."
            return
        }else{
            val baseAmount = tvBaseAmount.text.toString().toDouble()
