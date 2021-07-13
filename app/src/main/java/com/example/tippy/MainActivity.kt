@@ -52,21 +52,24 @@ class MainActivity : AppCompatActivity() {
         })
 
 
-
-
-
-
     }
 
     private fun computerTipAndTotal() {
-        val baseAmount = tvBaseAmount.text.toString().toDouble()
-        val tipPercentage = seekBarTip.progress
 
-        val tipAmount = baseAmount * tipPercentage / 100
-        val totalAmount = baseAmount + tipAmount
+       if (tvBaseAmount.text.toString().isEmpty()){
+           tvTipAmount.text = ""
+           tvTotal.text = ""
+           return
+       }else{
+           val baseAmount = tvBaseAmount.text.toString().toDouble()
+           val tipPercentage = seekBarTip.progress
+
+           val tipAmount = baseAmount * tipPercentage / 100
+           val totalAmount = baseAmount + tipAmount
 
 //                Displaying them on the screen
-        tvTipAmount.text = tipAmount.toString()
-        tvTotal.text = totalAmount.toString()
+           tvTipAmount.text = tipAmount.toString()
+           tvTotal.text = totalAmount.toString()
+       }
     }
 }
